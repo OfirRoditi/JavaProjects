@@ -25,7 +25,7 @@ public class CarDealership {
 
     public static void main()
     {
-
+        //Change the path that adjust to the CarDealership file location
         File file = new File("C:\\Users\\ofirr\\Desktop\\Sold.txt");//Creating new object of file
         PrintWriter printWriterSoldFile = null;
         try {
@@ -68,6 +68,7 @@ public class CarDealership {
 
     private static void Exit(ArrayList<Car> carArrayList,PrintWriter printWriterSoldFile) {
         try {
+            //Change the path that adjust to the CarDealership file location
             File file = new File("C:\\Users\\ofirr\\Desktop\\CarDealership.txt");
             int numOfCar = 0;
             /**
@@ -222,6 +223,7 @@ public class CarDealership {
         ArrayList<Employee> employeesArrayList = new ArrayList<>();
 
         try {
+            //Change the path that adjust to the Employee file location
             File emplyeeFile = new File("C:\\Users\\ofirr\\Desktop\\Employee.txt");
             if (emplyeeFile.exists() == false)
                 throw new FileNotFoundException();
@@ -261,6 +263,7 @@ public class CarDealership {
 
         ArrayList<Car> carList = new ArrayList();
         try {
+            //Change the path that adjust to the CarDealership file location
             File file = new File("C:\\Users\\ofirr\\Desktop\\CarDealership.txt");
             if (file.exists() == false)
                 throw new FileNotFoundException();
